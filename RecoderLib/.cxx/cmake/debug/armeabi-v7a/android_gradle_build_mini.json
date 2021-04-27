@@ -1,0 +1,51 @@
+{
+  "buildFiles": [
+    "/home/chencl/work/FFmpegVideoRecord/RecoderLib/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/chencl/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "swresample-Debug-armeabi-v7a": {
+      "artifactName": "swresample",
+      "abi": "armeabi-v7a",
+      "output": "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libswresample.so"
+    },
+    "jx_ffmpeg_jni-Debug-armeabi-v7a": {
+      "artifactName": "jx_ffmpeg_jni",
+      "buildCommand": "/home/chencl/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a --target jx_ffmpeg_jni",
+      "abi": "armeabi-v7a",
+      "output": "/home/chencl/work/FFmpegVideoRecord/RecoderLib/build/intermediates/cmake/debug/obj/armeabi-v7a/libjx_ffmpeg_jni.so"
+    },
+    "fdk-aac-Debug-armeabi-v7a": {
+      "artifactName": "fdk-aac",
+      "abi": "armeabi-v7a",
+      "output": "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libfdk-aac.so"
+    },
+    "avfilter-Debug-armeabi-v7a": {
+      "artifactName": "avfilter",
+      "abi": "armeabi-v7a",
+      "output": "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libavfilter.so"
+    },
+    "avcodec-Debug-armeabi-v7a": {
+      "artifactName": "avcodec",
+      "abi": "armeabi-v7a",
+      "output": "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libavcodec.so"
+    },
+    "swscale-Debug-armeabi-v7a": {
+      "artifactName": "swscale",
+      "abi": "armeabi-v7a",
+      "output": "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libswscale.so"
+    },
+    "avformat-Debug-armeabi-v7a": {
+      "artifactName": "avformat",
+      "abi": "armeabi-v7a",
+      "output": "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libavformat.so"
+    },
+    "avutil-Debug-armeabi-v7a": {
+      "artifactName": "avutil",
+      "abi": "armeabi-v7a",
+      "output": "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libavutil.so"
+    }
+  }
+}

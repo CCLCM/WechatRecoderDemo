@@ -1,0 +1,167 @@
+
+{
+	"buildFiles" : [ "/home/chencl/work/FFmpegVideoRecord/RecoderLib/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/home/chencl/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"avcodec-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avcodec",
+			"buildType" : "debug",
+			"output" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libavcodec.so",
+			"toolchain" : "14559932510185103975"
+		},
+		"avfilter-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avfilter",
+			"buildType" : "debug",
+			"output" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libavfilter.so",
+			"toolchain" : "14559932510185103975"
+		},
+		"avformat-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avformat",
+			"buildType" : "debug",
+			"output" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libavformat.so",
+			"toolchain" : "14559932510185103975"
+		},
+		"avutil-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avutil",
+			"buildType" : "debug",
+			"output" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libavutil.so",
+			"toolchain" : "14559932510185103975"
+		},
+		"fdk-aac-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "fdk-aac",
+			"buildType" : "debug",
+			"output" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libfdk-aac.so",
+			"toolchain" : "14559932510185103975"
+		},
+		"jx_ffmpeg_jni-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "jx_ffmpeg_jni",
+			"buildCommand" : "/home/chencl/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a --target jx_ffmpeg_jni",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_yuv_encode_h264.cpp",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_pcm_encode_aac.cpp",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_media_muxer.cpp",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_jni_handler.cpp",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_ffmpeg_jni.cpp",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/threadsafe_queue.cpp",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_log.cpp",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/cmdutils.c",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg_filter.c",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg_opt.c",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_ffmpeg_cmd_run.c",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Djx_ffmpeg_jni_EXPORTS -I../../../../ffmpeg-3.2.5  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_ffmpeg_config.cpp",
+					"workingDirectory" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/.cxx/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/build/intermediates/cmake/debug/obj/armeabi-v7a/libjx_ffmpeg_jni.so",
+			"toolchain" : "14559932510185103975"
+		},
+		"swresample-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "swresample",
+			"buildType" : "debug",
+			"output" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libswresample.so",
+			"toolchain" : "14559932510185103975"
+		},
+		"swscale-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "swscale",
+			"buildType" : "debug",
+			"output" : "/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/jniLibs/armeabi-v7a/libswscale.so",
+			"toolchain" : "14559932510185103975"
+		}
+	},
+	"toolchains" : 
+	{
+		"14559932510185103975" : 
+		{
+			"cCompilerExecutable" : "/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/chencl/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

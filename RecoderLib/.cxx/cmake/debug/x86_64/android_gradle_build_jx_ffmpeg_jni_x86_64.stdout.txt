@@ -1,0 +1,129 @@
+[1/4] Building CXX object CMakeFiles/jx_ffmpeg_jni.dir/src/main/cpp/jx_media_muxer.cpp.o
+[2/4] Building C object CMakeFiles/jx_ffmpeg_jni.dir/src/main/cpp/ffmpeg.c.o
+[3/4] Building C object CMakeFiles/jx_ffmpeg_jni.dir/src/main/cpp/jx_ffmpeg_cmd_run.c.o
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:235:9: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+        av_buffersrc_add_frame_flags(ist->filters[i]->filter, frame,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:265:9: warning: assigning to 'int8_t *' (aka 'signed char *') from 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    dst = frame->data[0];
+        ^ ~~~~~~~~~~~~~~
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:268:29: warning: passing 'int8_t *' (aka 'signed char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        sub2video_copy_rect(dst, dst_linesize, frame->width, frame->height, sub->rects[i]);
+                            ^~~
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:198:42: note: passing argument to parameter 'dst' here
+static void sub2video_copy_rect(uint8_t *dst, int dst_linesize, int w, int h,
+                                         ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:307:9: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+        av_buffersrc_add_frame(ist->filters[i]->filter, NULL);
+        ^~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:1792:35: warning: passing 'char *' to parameter of type 'const unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        avio_write(progress_avio, buf_script.str,
+                                  ^~~~~~~~~~~~~~
+../../../../ffmpeg-3.2.5/libavformat/avio.h:434:54: note: passing argument to parameter 'buf' here
+void avio_write(AVIOContext *s, const unsigned char *buf, int size);
+                                                     ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:2006:19: warning: 'avpicture_fill' is deprecated [-Wdeprecated-declarations]
+        int ret = avpicture_fill(&pict, opkt.data, ost->st->codecpar->format,
+                  ^
+../../../../ffmpeg-3.2.5/libavcodec/avcodec.h:5462:1: note: 'avpicture_fill' has been explicitly marked deprecated here
+attribute_deprecated
+^
+../../../../ffmpeg-3.2.5/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:2580:17: warning: 5 enumeration values not handled in switch: 'AVMEDIA_TYPE_UNKNOWN', 'AVMEDIA_TYPE_DATA', 'AVMEDIA_TYPE_SUBTITLE'... [-Wswitch]
+        switch (ist->dec_ctx->codec_type) {
+                ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:3080:15: warning: 'avcodec_copy_context' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_copy_context(ost->st->codec, ost->enc_ctx);
+              ^
+../../../../ffmpeg-3.2.5/libavcodec/avcodec.h:4250:1: note: 'avcodec_copy_context' has been explicitly marked deprecated here
+attribute_deprecated
+^
+../../../../ffmpeg-3.2.5/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:3080:45: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_copy_context(ost->st->codec, ost->enc_ctx);
+                                            ^
+../../../../ffmpeg-3.2.5/libavformat/avformat.h:892:5: note: 'codec' has been explicitly marked deprecated here
+    attribute_deprecated
+    ^
+../../../../ffmpeg-3.2.5/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:3108:18: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+        ost->st->codec->codec = ost->enc_ctx->codec;
+                 ^
+../../../../ffmpeg-3.2.5/libavformat/avformat.h:892:5: note: 'codec' has been explicitly marked deprecated here
+    attribute_deprecated
+    ^
+../../../../ffmpeg-3.2.5/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:3247:20: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        av_strlcpy(encoder_string, LIBAVCODEC_IDENT " ", encoder_string_len);
+                   ^~~~~~~~~~~~~~
+../../../../ffmpeg-3.2.5/libavutil/avstring.h:100:25: note: passing argument to parameter 'dst' here
+size_t av_strlcpy(char *dst, const char *src, size_t size);
+                        ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:3249:20: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        av_strlcpy(encoder_string, "Lavc ", encoder_string_len);
+                   ^~~~~~~~~~~~~~
+../../../../ffmpeg-3.2.5/libavutil/avstring.h:100:25: note: passing argument to parameter 'dst' here
+size_t av_strlcpy(char *dst, const char *src, size_t size);
+                        ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:3250:16: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    av_strlcat(encoder_string, ost->enc->name, encoder_string_len);
+               ^~~~~~~~~~~~~~
+../../../../ffmpeg-3.2.5/libavutil/avstring.h:118:25: note: passing argument to parameter 'dst' here
+size_t av_strlcat(char *dst, const char *src, size_t size);
+                        ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:3251:48: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    av_dict_set(&ost->st->metadata, "encoder", encoder_string,
+                                               ^~~~~~~~~~~~~~
+../../../../ffmpeg-3.2.5/libavutil/dict.h:130:65: note: passing argument to parameter 'value' here
+int av_dict_set(AVDictionary **pm, const char *key, const char *value, int flags);
+                                                                ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:3778:43: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+            debug = input_streams[0]->st->codec->debug << 1;
+                                          ^
+../../../../ffmpeg-3.2.5/libavformat/avformat.h:892:5: note: 'codec' has been explicitly marked deprecated here
+    attribute_deprecated
+    ^
+../../../../ffmpeg-3.2.5/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/ffmpeg.c:3798:35: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+            input_streams[i]->st->codec->debug = debug;
+                                  ^
+../../../../ffmpeg-3.2.5/libavformat/avformat.h:892:5: note: 'codec' has been explicitly marked deprecated here
+    attribute_deprecated
+    ^
+../../../../ffmpeg-3.2.5/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+16 warnings generated.
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_media_muxer.cpp:33:12: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    cmd[0]="ffmpeg";
+           ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_media_muxer.cpp:34:12: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    cmd[1]="-i";
+           ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_media_muxer.cpp:36:12: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    cmd[3]="-i";
+           ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_media_muxer.cpp:38:12: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    cmd[5]="-c:v";
+           ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_media_muxer.cpp:39:12: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    cmd[6]="copy";
+           ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_media_muxer.cpp:40:12: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    cmd[7]="-c:a";
+           ^
+/home/chencl/work/FFmpegVideoRecord/RecoderLib/src/main/cpp/jx_media_muxer.cpp:41:12: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    cmd[8]="copy";
+           ^
+7 warnings generated.
+[4/4] Linking CXX shared library ../../../../build/intermediates/cmake/debug/obj/x86_64/libjx_ffmpeg_jni.so

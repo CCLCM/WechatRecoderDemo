@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <SurfaceView
+            android:layout_marginTop="49dp"
+            android:id="@+id/record_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="49dip"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/record_camera_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/record_camera_switch_selector"
+                android:button="@null" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!-- camera_bottom_bg -->
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dip"
+        android:background="@color/color_381902"
+        >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dip"
+            android:contentDescription="@string/imageview_content_description"
+            android:padding="10dip"
+            android:src="@drawable/record_cancel_normal" />
+        <CheckedTextView
+            android:id="@+id/record_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dip"
+            android:background="@drawable/record_delete_selector"
+            android:button="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/record_controller"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/small_video_shoot"
+            android:gravity="center"
+            android:text="按住拍"
+            android:textColor="@color/camera_progress_three"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.tools.recoderlib.CircleProgressBar
+                android:padding="3dp"
+                android:focusable="false"
+                android:layout_gravity="center"
+                android:id="@+id/circle_record_progress"
+                android:layout_width="103dp"
+                android:layout_height="103dp"
+                app:cover_bg_cir_color="#43d8d8d8"
+                app:cover_start_color="#0332D0"
+                app:cover_animduration_time="6000"
+                app:progress_width="5dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
