@@ -67,7 +67,7 @@
 # include "libavfilter/avfilter.h"
 # include "libavfilter/buffersrc.h"
 # include "libavfilter/buffersink.h"
-#include "jx_ffmpeg_cmd_run.h"
+#include "rl_ffmpeg_cmd_run.h"
 
 #if HAVE_SYS_RESOURCE_H
 
@@ -116,8 +116,8 @@
 #include "cmdutils.h"
 #include "libavutil/avassert.h"
 #include "libavcodec/avfft.h"
-#include "jx_log.h"
-#include "jx_ffmpeg_cmd_run.h"
+#include "rl_log.h"
+#include "rl_ffmpeg_cmd_run.h"
 const char program_name[] = "ffmpeg";
 const int program_birth_year = 2000;
 

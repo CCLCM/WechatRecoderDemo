@@ -142,13 +142,13 @@ public class LocalMediaCompress extends MediaRecorderBase {
             return mOnlyCompressOverBean;
         }
 
-        File f = new File(JianXiCamera.getVideoCachePath());
+        File f = new File(RLCamera.getVideoCachePath());
         if (!FileUtils.checkFile(f)) {
             f.mkdirs();
         }
         String key = String.valueOf(System.currentTimeMillis());
         mMediaObject = setOutputDirectory(key,
-                JianXiCamera.getVideoCachePath() + key);
+                RLCamera.getVideoCachePath() + key);
 
         mMediaObject.setOutputTempVideoPath(mNeedCompressVideo);
 

@@ -14,7 +14,7 @@ import android.view.View;
 
 
 import com.tools.recoderlib.DeviceUtils;
-import com.tools.recoderlib.JianXiCamera;
+import com.tools.recoderlib.RLCamera;
 import com.tools.recoderlib.MediaRecorderActivity;
 import com.tools.recoderlib.model.AutoVBRMode;
 import com.tools.recoderlib.model.BaseMediaBitrateConfig;
@@ -134,16 +134,16 @@ public class MainActivity extends AppCompatActivity {
                 .getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
         if (DeviceUtils.isZte()) {
             if (dcim.exists()) {
-                JianXiCamera.setVideoCachePath(dcim + "/pic/");
+                RLCamera.setVideoCachePath(dcim + "/pic/");
             } else {
-                JianXiCamera.setVideoCachePath(dcim.getPath().replace("/sdcard/",
+                RLCamera.setVideoCachePath(dcim.getPath().replace("/sdcard/",
                         "/sdcard-ext/")
                         + "/pic/");
             }
         } else {
-            JianXiCamera.setVideoCachePath(dcim + "/pic/");
+            RLCamera.setVideoCachePath(dcim + "/pic/");
         }
         // 初始化拍摄
-        JianXiCamera.initialize(false, null);
+        RLCamera.initialize(false, null);
     }
 }

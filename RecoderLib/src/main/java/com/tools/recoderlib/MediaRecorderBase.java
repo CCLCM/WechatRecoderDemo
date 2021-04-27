@@ -30,6 +30,7 @@ import java.util.List;
  */
 public abstract class MediaRecorderBase implements Callback, PreviewCallback, IMediaRecorder {
     public static  boolean NEED_FULL_SCREEN = false;
+    private static final  String TAG = MediaRecorderBase.class.getSimpleName();
     /**
      * 小视频高度
      */
@@ -299,7 +300,7 @@ public abstract class MediaRecorderBase implements Callback, PreviewCallback, IM
                     mOnErrorListener.onVideoError(MEDIA_ERROR_CAMERA_AUTO_FOCUS, 0);
                 }
                 if (e != null)
-                    Log.e("jianxi", "autoFocus", e);
+                    Log.e(TAG, "autoFocus", e);
             }
         }
         return false;
@@ -354,7 +355,7 @@ public abstract class MediaRecorderBase implements Callback, PreviewCallback, IM
                     mOnErrorListener.onVideoError(MEDIA_ERROR_CAMERA_AUTO_FOCUS, 0);
                 }
                 if (e != null)
-                    Log.e("jianxi", "autoFocus", e);
+                    Log.e(TAG, "autoFocus", e);
             }
         }
         return false;
@@ -373,7 +374,7 @@ public abstract class MediaRecorderBase implements Callback, PreviewCallback, IM
                     setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
                 return true;
             } catch (Exception e) {
-                Log.e("jianxi", "toggleFlashMode", e);
+                Log.e(TAG, "toggleFlashMode", e);
             }
         }
         return false;
@@ -393,7 +394,7 @@ public abstract class MediaRecorderBase implements Callback, PreviewCallback, IM
                 }
                 return true;
             } catch (Exception e) {
-                Log.e("jianxi", "setFlashMode", e);
+                Log.e(TAG, "setFlashMode", e);
             }
         }
         return false;
@@ -615,7 +616,7 @@ public abstract class MediaRecorderBase implements Callback, PreviewCallback, IM
                 if (mOnErrorListener != null) {
                     mOnErrorListener.onVideoError(MEDIA_ERROR_CAMERA_SET_PREVIEW_DISPLAY, 0);
                 }
-                Log.e("jianxi", "setPreviewDisplay fail " + e.getMessage());
+                Log.e(TAG, "setPreviewDisplay fail " + e.getMessage());
             }
 
             //设置摄像头参数
@@ -634,7 +635,7 @@ public abstract class MediaRecorderBase implements Callback, PreviewCallback, IM
             if (mOnErrorListener != null) {
                 mOnErrorListener.onVideoError(MEDIA_ERROR_CAMERA_PREVIEW, 0);
             }
-            Log.e("jianxi", "startPreview fail :" + e.getMessage());
+            Log.e(TAG, "startPreview fail :" + e.getMessage());
         }
     }
 
@@ -657,9 +658,9 @@ public abstract class MediaRecorderBase implements Callback, PreviewCallback, IM
                 camera.addCallbackBuffer(new byte[buffSize]);
                 camera.setPreviewCallbackWithBuffer(this);
             } catch (OutOfMemoryError e) {
-                Log.e("jianxi", "startPreview...setPreviewCallback...", e);
+                Log.e(TAG, "startPreview...setPreviewCallback...", e);
             }
-            Log.e("jianxi", "startPreview...setPreviewCallbackWithBuffer...width:" + size.width + " height:" + size.height);
+            Log.e(TAG, "startPreview...setPreviewCallbackWithBuffer...width:" + size.width + " height:" + size.height);
         } else {
             camera.setPreviewCallback(this);
         }
@@ -676,7 +677,7 @@ public abstract class MediaRecorderBase implements Callback, PreviewCallback, IM
                 // camera.lock();
                 camera.release();
             } catch (Exception e) {
-                Log.e("jianxi", "stopPreview...");
+                Log.e(TAG, "stopPreview...");
             }
             camera = null;
         }

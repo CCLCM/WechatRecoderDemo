@@ -17,7 +17,6 @@ import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.CheckedTextView;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -204,13 +203,13 @@ public class MediaRecorderActivity extends Activity implements
         mMediaRecorder.setOnEncodeListener(this);
         mMediaRecorder.setOnPreparedListener(this);
 
-        File f = new File(JianXiCamera.getVideoCachePath());
+        File f = new File(RLCamera.getVideoCachePath());
         if (!FileUtils.checkFile(f)) {
             f.mkdirs();
         }
         String key = String.valueOf(System.currentTimeMillis());
         mMediaObject = mMediaRecorder.setOutputDirectory(key,
-                JianXiCamera.getVideoCachePath() + key);
+                RLCamera.getVideoCachePath() + key);
         mMediaRecorder.setSurfaceHolder(mSurfaceView.getHolder());
         mMediaRecorder.prepare();
     }
