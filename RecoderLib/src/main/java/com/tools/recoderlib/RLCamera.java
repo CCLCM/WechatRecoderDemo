@@ -18,7 +18,7 @@ public class RLCamera {
     private static String mVideoCachePath;
 
     /** 执行FFMPEG命令保存路径 */
-    public final static String FFMPEG_LOG_FILENAME_TEMP = "jx_ffmpeg.log";
+    public final static String FFMPEG_LOG_FILENAME_TEMP = "rl_ffmpeg.log";
 
     /**
      *
